@@ -2,6 +2,9 @@
 * {
   word-break: keep-all;
 }
+body {
+  background-color: black;
+}
 .container {
   max-width: 960px;
 }
@@ -33,6 +36,7 @@
   background-image: url(image/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   color: white;
@@ -73,4 +77,49 @@
   color: black;
   font-weight: 700;
   transition: 0.5s;
+}
+
+
+.section2 {
+  background-image: url(image/bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: white;
+  text-align: center;
+}
+
+.contentLine {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid rgb(255, 255, 190);
+}
+
+.contentTitle {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(255, 255, 100);
+}
+.contentImg {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contentText {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: black;
+  color: white;
 }

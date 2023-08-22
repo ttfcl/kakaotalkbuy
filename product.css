@@ -38,7 +38,7 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 75px;
   color: white;
   text-align: center;
 }
@@ -85,7 +85,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
+  padding-top: 75px;
   padding-bottom: 200px;
   color: white;
   text-align: center;
@@ -112,11 +112,24 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.contentImg2 {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .contentText {
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 700;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {

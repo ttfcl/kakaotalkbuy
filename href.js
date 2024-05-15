@@ -1,4 +1,4 @@
-let abc, defg
+let abc, defg, a2
 
 var firebaseConfig = {
   apiKey: "AIzaSyCb44FGoUhJ2swDDTkG8uhFsn3V72oc4Hk",
@@ -11,6 +11,10 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
   
   const db = firebase.firestore();
+  db.collection('product11').doc('link').get().then((결과)=>{
+    a2 = String(Number(결과.data().count) + 1)
+    db.collection('product11').doc('link').update({"count" : a2})  
+  })
   db.collection('product').doc('nuru').get().then((결과)=>{
     abc = 결과.data().kt
       console.log(abc)

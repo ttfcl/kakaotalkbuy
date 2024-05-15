@@ -6,7 +6,7 @@ let nta = document.querySelector('#nta')
 let ntcb = document.querySelector('#ntcb')
 let logout = document.querySelector('#logout')
 
-let a1, a2 
+let a1, a2, a3
 
 var firebaseConfig = {
   apiKey: "AIzaSyCb44FGoUhJ2swDDTkG8uhFsn3V72oc4Hk",
@@ -19,6 +19,10 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
   
   const db = firebase.firestore();
+  db.collection('product11').doc('link').get().then((결과)=>{
+    a3 = 결과.data().count
+    counter.textContent = a3
+  })
   db.collection('product').doc('nuru').get().then((결과)=>{
     a1 = 결과.data().kt
     console.log(a1)
